@@ -245,8 +245,53 @@ Operator | Symbol | Function
 Addition | + | Adds two values
 Subtraction | - | Subtracts one value from another
 Multiplication | * | Multiplies two values
+Exponentiation| ** | Raises the first operand to the power of the second operand
 Division | / | Divides one value by another
 Modulus | % | Divides one value by another and returns the remainder
-Increment | + | + Shortcut to add 1 to a single number
-Decrement | - | - Shortcut to subtract 1 from a single number
-Unary | negation | - Makes a positive negative or a negative positive
+Increment | ++ | Shortcut to add 1 to a single number
+Decrement | -- | Shortcut to subtract 1 from a single number
+
+## Understanding Assignment Operators
+Operator| Example   | Same As
+--------|-----------|--------
+=       | x = y     | x = y
++=      | x += y    | x = x + y
+-=      | x -= y    | x = x - y
+*=      | x *= y    | x = x * y
+/=      | x /= y 	| x = x / y
+%=      | x %= y 	| x = x % y
+**=     | x **= y 	| x = x ** y
+
+## Understanding Comparison Operators
+
+ Operator | 	Description
+| ---------|-----------
+| ==       | 	equal to
+| ===      | 	equal value and equal type
+| !=       | 	not equal
+| !==      | 	not equal value or not equal type
+| >        | 	greater than
+| <        | 	less than
+| >=       | 	greater than or equal to
+| <=       | 	less than or equal to
+| ?        | 	ternary operator
+
+## Understanding Logical Operators
+
+Operator  | 	Description
+----------|-----------
+| &&        | logical and
+| \|\|      | logical or
+| !         | logical not
+
+## The Bitwise Operators
+
+Operator        | Symbol
+----------      |-----------
+| AND           | &
+| XOR           | ^
+| OR            | \|
+| NOT           | ~
+| Left  Shift   | <<
+| Right Shift   | >>
+| Right Shift   | (Zero-Fill) >>>
