@@ -1,5 +1,5 @@
-# title: [The title of your site]
-# description: [A short description of your site's purpose]
+title: [Get started with JS]
+description: [Introduction to basic JavaScript]
 
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
