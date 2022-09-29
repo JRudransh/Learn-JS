@@ -18,28 +18,28 @@ need to understand them in any detail until you know a few other features of the
 ## Client Side
 Client side means that JavaScript runs in the client (software) that the viewer is using, rather than on the Web server of the site serving the page. In this case, the client would be a Web browser. To make more sense of this, let’s take a look at how a server-side language works and how a client-side language works.
 
-```
-<script>
-    document.write("This writes text to the page");
-</script>
-```
+
+        <script>
+            document.write("This writes text to the page");
+        </script>
+
 ## Using the HTML Script Tags
 Now that you have been introduced to JavaScript, you’re ready to start coding. Since JavaScript code is run from HTML documents, you need to know how to tell browsers to run your scripts. The most common way to set off a script is to use the HTML `<script> </script>` tags in your document. You can place your script tags in either the head or body section of an HTML document.
 
 ## Calling External Scripts
-```
-<script type="text/javascript" src="main.js"></script>
-```
+
+        <script type="text/javascript" src="main.js"></script>
+
 
 ## Writing a “Hello World” Script
 Rather than write “Hello World,” you’ll use another line of text for this script: “Yes! I am
 now a JavaScript coder!” This requires only a single line of code, using the document.write()
 method, which writes a string of text to the document:
-```
-<script type="text/javascript">
-    document.write("Yes! I am now a JavaScript coder!");
-</script>
-```
+
+        <script type="text/javascript">
+            document.write("Yes! I am now a JavaScript coder!");
+        </script>
+
 **********************
 # Q & A
 #### Q. Why is there a dot (.) in the document.write() command?
@@ -56,19 +56,19 @@ section.
 ## Inserting Comments on One Line
 If you want to add commentary on a single line in your code, place a pair of forward slashes
 before the text of the comment:
-```
-// Your comment here
-document.write("This is cool!"); // writes out my opinion
-```
+
+        // Your comment here
+        document.write("This is cool!"); // writes out my opinion
+
 
 ## Adding Multiple-Line Comments
-```
-/*
-My script will write some text into my HTML document!
-All of this text is ignored by the browser.
-*/
-document.write("You can see me!");
-```
+
+        /*
+        My script will write some text into my HTML document!
+        All of this text is ignored by the browser.
+        */
+        document.write("You can see me!");
+
 
 # Understanding Variables
 **A variable represents or holds a value. The actual value of a variable can be changed at any time.**
@@ -92,26 +92,32 @@ String variables are variables that represent a string of text. The string may c
 words, spaces, numbers, symbols, or most anything you like.
 
 **Using Special Characters**
-```
-Backslash (\)           \\
-Double quote (")        \"
-Single quote (')        \'
-Newline                 \n
-Tab                     \t
-```
+
+        Backslash (\)           \\
+        Double quote (")        \"
+        Single quote (')        \'
+        Newline                 \n
+        Tab                     \t
+
 
 ## Boolean
+
 A Boolean variable is one with a value of true or false.
 
 ## Null
+
 Null means that the variable has no value. It is not a space, nor is it a zero; it is simply nothing.
 
 *********************
 
 # Project
+
 ## Declare Variables
+
 This project gives you the opportunity to practice declaring variables with various values. It also prints a short line of text on the page.
+
 ### Step by Step
+
 1. Create an HTML page, leaving the space between the <body> and </body> tags open.
 2. Between the <body> and </body> tags, add the <script> and </script>
 3. Create a numeric variable named chipscost and give it the value 2.59
@@ -119,34 +125,36 @@ This project gives you the opportunity to practice declaring variables with vari
 5. Create a variable named nada and give it the value null
 6. Create a JavaScript statement to write to the Web page the string value that follows. Remember to escape quotation marks when necessary: `John said, “This project is fun!”`
 7. The body section of the HTML document should look like this when you are finished:
-```
-<body>
-<script type="text/javascript">
-var chipscost=2.59;
-var istrue=false;
-var nada=null;
-document.write("John said, \"This project is fun!\"");
-</script>
-</body>
-```
+
+        <body>
+        <script type="text/javascript">
+        var chipscost=2.59;
+        var istrue=false;
+        var nada=null;
+        document.write("John said, \"This project is fun!\"");
+        </script>
+        </body>
+
 8. Save the file as prj_1.html and view it in your Web browser.
 
 ## Using Variables in Scripts
+
 ### Making a Call to a Variable
-```
-<script language="JavaScript">
-    var mycar="Corvette";
-    document.write(mycar);
-</script>
-```
+
+        <script language="JavaScript">
+            var mycar="Corvette";
+            document.write(mycar);
+        </script>
+
 ### Adding Variables to Text Strings
-```
-<script type="text/javascript">
-    var mycar="Corvette";
-    document.write("I like driving my "+mycar);
-</script>
-```
+
+        <script type="text/javascript">
+            var mycar="Corvette";
+            document.write("I like driving my "+mycar);
+        </script>
+
 ************
+
 # Function
 
 **What a Function Is**
@@ -161,65 +169,70 @@ make it easier for yourself and others to see the purpose of each section of the
 debug it more easily.
 
 ## Declaring Functions
-```
-function functionname() {
-    // Code here
-}
-```
+
+        function functionname() {
+            // Code here
+        }
+
 
 ### Naming Functions
+
 As with variables, functions need to be named carefully to avoid problems with your scripts. The same basic rules that applied to variables apply to the naming of functions: case sensitivity, using allowed characters, avoiding reserved words, and giving functions memorable and meaningful names.
 
 ### Adding Parameters to Functions
+
 Parameters are used to allow a function to import one or more values from somewhere outside
 the function.
-```
-function functionname(variable1,variable2)
-```
+
+        function functionname(variable1,variable2)
+
 
 ### Adding Return Statements to Functions
+
 A return statement is used to be sure that a function returns a specific value to the main script, to be used in the main script. You place the return statement as the last line of the function before the closing curly bracket and end it with a semicolon.
 
-```
-function get_added_text() {
-    var textpart1="This is ";
-    var textpart2="fun!";
-    var added_text=textpart1+textpart2;
-    return added_text;
-}
-```
+
+        function get_added_text() {
+            var textpart1="This is ";
+            var textpart2="fun!";
+            var added_text=textpart1+textpart2;
+            return added_text;
+        }
+
 
 
 ### Calling Functions in Your Scripts
+
 Now that you know how the function itself works, you need to learn how to call a function in your script. A call to a function in JavaScript is simply the function name along with the set of parentheses
-```
-functionname();
-```
+
+        functionname();
+
 
 ### Calling a Function from Another Function
+
 Calling a function within another function can be a useful way to organize the sequence in which your events will occur. Usually, the function is placed inside another function that has a larger task to finish.
 
-```
-function update_alert(){
-    window.alert("Welcome! This site is updated daily!");
-}
 
-function call_alert() {
-    update_alert();
-}
+        function update_alert(){
+            window.alert("Welcome! This site is updated daily!");
+        }
 
-call_alert();
-```
+        function call_alert() {
+            update_alert();
+        }
+
+        call_alert();
+
 
 **Parameters Are Optional**
-```
-function check_alert(pcheck,car) {
-    window.alert("You make $"+pcheck+" and have a "+car);
-}
-check_alert();
 
-// You make $undefined and have a undefined
-```
+        function check_alert(pcheck,car) {
+            window.alert("You make $"+pcheck+" and have a "+car);
+        }
+        check_alert();
+
+        // You make $undefined and have a undefined
+
 *************************
 
 # Operators
@@ -240,16 +253,16 @@ These are logical operators that work at the bit level (ones and zeros). They us
 
 ## Understanding Mathematical Operators
 
-Operator | Symbol | Function 
------|--------|--------
-Addition | + | Adds two values
-Subtraction | - | Subtracts one value from another
-Multiplication | * | Multiplies two values
-Exponentiation| ** | Raises the first operand to the power of the second operand
-Division | / | Divides one value by another
-Modulus | % | Divides one value by another and returns the remainder
-Increment | ++ | Shortcut to add 1 to a single number
-Decrement | -- | Shortcut to subtract 1 from a single number
+Operator         | Symbol | Function 
+-----------------|--------|--------
+Addition         |    +   | Adds two values
+Subtraction      |    -   | Subtracts one value from another
+Multiplication   |    *   | Multiplies two values
+Exponentiation   |   **   | Raises the first operand to the power of the second operand
+Division         |    /   | Divides one value by another
+Modulus          |   %    | Divides one value by another and returns the remainder
+Increment        |   ++   | Shortcut to add 1 to a single number
+Decrement        |   --   | Shortcut to subtract 1 from a single number
 
 ## Understanding Assignment Operators
 Operator| Example   | Same As
@@ -278,8 +291,8 @@ Operator| Example   | Same As
 
 ## Understanding Logical Operators
 
-Operator  | 	Description
-----------|-----------
+Operator    | 	Description
+------------|-----------
 | &&        | logical and
 | \|\|      | logical or
 | !         | logical not
@@ -287,7 +300,7 @@ Operator  | 	Description
 ## The Bitwise Operators
 
 Operator        | Symbol
-----------      |-----------
+----------------|-----------
 | AND           | &
 | XOR           | ^
 | OR            | \|
