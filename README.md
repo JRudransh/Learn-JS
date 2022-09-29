@@ -258,7 +258,7 @@ These operators are used to compare two values, two variables, or perhaps two lo
 
 #### Logical
 
-These operators are used to compare two conditional statements (or to operate on one statement) to determine if the result is true and to proceed accordingly. They use symbols such as && (returns true if the statements on both sides of the operator are true) and || (returns true if a statement on either side of the operator is true).
+These operators are used to compare two conditional statements (or to operate on one statement) to determine if the result is true and to proceed accordingly. They use symbols such as `&&` (returns true if the statements on both sides of the operator are true) and `||` (returns true if a statement on either side of the operator is true).
 
 #### Bitwise
 
