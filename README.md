@@ -297,10 +297,10 @@ Operator| Example       | Same As
   ===      |  equal value and equal type
   !=       |  not equal
   !==      |  not equal value or not equal type
-  >        |  greater than
+  \>        |  greater than
   <        |  less than
-  >=       |  greater than or equal to
-  <=       |  less than or equal to
+  \>=       |  greater than or equal to
+  \<=       |  less than or equal to
   ?        |  ternary operator
 
 ## Understanding Logical Operators
